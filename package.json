@@ -1,0 +1,15 @@
+{
+  "name": "add-asset-html-cdn-webpack-plugin",
+  "version": "1.0.0",
+  "description":
+    "base on 'html-webpack-plugin' dynamic injection of cdn data to html template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lonnyshaw@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "github": "https://github.com/jewely/add-asset-html-cdn-webpack-plugin.git"
+  }
+}
