@@ -19,11 +19,11 @@ function getContent(cdnPath, scriptContent, styleContent) {
 
 /**
  * AddAssetHtmlCdn
- * @param {Boolean} isWork 是否工作
- * @param {Object} options cdn配置
+ * @param {Boolean} isWork does the plugin work
+ * @param {Object} options cdn config data
  */
-function AddAssetHtmlCdn(isWork, options) {
-  this.isWork = true;
+function AddAssetHtmlCdn(isWork = true, options = {}) {
+  this.isWork = isWork;
   this.options = options;
 }
 
@@ -69,7 +69,7 @@ AddAssetHtmlCdn.prototype.apply = function(compiler) {
         console.log(`\nprocess ${htmlPluginData.outputName} cdn complete...\n`);
       }
 
-      callback(null, htmlPluginData);
+      callback && callback(null, htmlPluginData);
     });
   });
 };
